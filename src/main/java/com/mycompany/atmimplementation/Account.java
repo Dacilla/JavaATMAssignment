@@ -3,13 +3,23 @@ package com.mycompany.atmimplementation;
 public abstract class Account {
     private String accountNumber;
     private Double balance;
-    private Long withdrawLimit;
+    protected Long withdrawalLimit;
     private Double totalWithdrawnPerDay;
     private Double interestRate;
     private Double interestEarned;
     
-    public abstract Double calculateInterest();
-
+    public Double calculateInterest(){
+        return null;
+    }
+    
+    public Boolean checkNotes(){
+        return true;
+    }
+    
+    public Boolean hasEnoughFunds(Double amount){
+        return true;
+    }
+    
     public String getAccountNumber() {
         return accountNumber;
     }
@@ -26,12 +36,12 @@ public abstract class Account {
         this.balance = balance;
     }
 
-    public Long getWithdrawLimit() {
-        return withdrawLimit;
+    public Long getWithdrawalLimit() {
+        return withdrawalLimit;
     }
 
-    public void setWithdrawLimit(Long withdrawLimit) {
-        this.withdrawLimit = withdrawLimit;
+    public void setWithdrawalLimit(Long withdrawalLimit) {
+        this.withdrawalLimit = withdrawalLimit;
     }
 
     public Double getTotalWithdrawnPerDay() {
