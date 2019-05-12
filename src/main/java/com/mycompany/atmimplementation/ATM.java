@@ -5,6 +5,7 @@ public class ATM {
     private String location;
     
     public Boolean logIn(){
+        
         return true;
     }
     
