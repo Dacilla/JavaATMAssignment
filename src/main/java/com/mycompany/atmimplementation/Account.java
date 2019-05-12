@@ -40,10 +40,6 @@ public abstract class Account {
         return withdrawalLimit;
     }
 
-    public void setWithdrawalLimit(Long withdrawalLimit) {
-        this.withdrawalLimit = withdrawalLimit;
-    }
-
     public Double getTotalWithdrawnPerDay() {
         return totalWithdrawnPerDay;
     }
